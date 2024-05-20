@@ -42,13 +42,13 @@ const Header = () => {
         <nav
           className={`${
             openNavigation
-              ? "flex flex-col text-center h-full pt-[12rem]"
+              ? "flex flex-col text-center h-full pt-[12rem] lg:flex-row lg:pt-0"
               : "hidden"
           } fixed top-[5rem] left-0 right-0 bottom-0  lg:static lg:flex lg:mx-auto lg:bg-transparent text-neutral-700 overflow-hidden`}
         >
           {openNavigation && (
             <img
-              className="absolute top-0 opacity-50"
+              className="absolute top-0 opacity-50 lg:hidden"
               src={mobileMenuBg}
               alt=""
             />
