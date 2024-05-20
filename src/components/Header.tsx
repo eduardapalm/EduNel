@@ -6,7 +6,6 @@ import edunelLogo from "../assets/edunelLogo.png";
 import { Button } from "./ui/button";
 import { TextAlignJustifyIcon, Cross1Icon } from "@radix-ui/react-icons";
 import mobileMenuBg from "../assets/svg/mobileMenuBg.svg";
-import bulb from "../assets/svg/bulb.svg";
 
 const Header = () => {
   const pathName = useLocation();
