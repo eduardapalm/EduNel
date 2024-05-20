@@ -1,34 +1,20 @@
-export const navigation = [
+import INavigationItem from "../interfaces/INavigationItem";
+
+export const navigation: INavigationItem[] = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Nossos Serviços",
+    url: "#services",
   },
   {
     id: "1",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Sobre Nós",
+    url: "#about",
   },
   {
     id: "2",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
+    title: "Entre em Contato",
+    url: "#contact",
     onlyMobile: true,
   },
 ];

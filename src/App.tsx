@@ -1,5 +1,11 @@
+import Header from "./components/Header";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline uppercase">Hello world!</h1>
+    <>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden w-full h-full">
+        <Header />
+      </div>
+    </>
   );
 }
