@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 export default {
   darkMode: ["class"],
   content: [
@@ -18,6 +20,29 @@ export default {
     },
     extend: {
       colors: {
+        color: {
+          1: "#EC651D",
+          2: "#3F3D56",
+          3: "#FAFAEC",
+        },
+        stroke: {
+          1: "#26242C",
+        },
+        n: {
+          1: "#FFFFFF",
+          2: "#CAC6DD",
+          3: "#ADA8C3",
+          4: "#757185",
+          5: "#3F3A52",
+          6: "#252134",
+          7: "#15131D",
+          8: "#0E0C15",
+          9: "#474060",
+          10: "#43435C",
+          11: "#1B1B2E",
+          12: "#2E2A41",
+          13: "#6C7275",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -51,6 +76,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        sans: "var(--font-sora)",
+        code: "var(--font-code)",
+        grotesk: "var(--font-grotesk)",
+        main: "Josefin Sans",
+        header: "Sarabun",
       },
       borderRadius: {
         lg: "var(--radius)",
