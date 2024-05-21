@@ -1,24 +1,36 @@
 import Section from "./Section";
-import bannerSvg from "../assets/svg/bannerSvg.svg";
+import bannerImg from "../assets/bannerImg.png";
+import bannerImgBg from "../assets/bannerImgBg.png";
 
 const Banner = () => {
   return (
-    <Section id="banner" className="w-full">
-      <div className="px-7 flex flex-col items-center justify-center h-full pt-10 text-color-2 text-center">
-        <h1 className="font-bold font-main text-4xl">
+    <Section id="banner" className="w-full flex-col-reverse lg:flex-row">
+      <div className="lg:px-7 flex flex-col justify-center h-full w-full md:w-[60%] text-color-2 text-center lg:text-left 2xl:pl-40">
+        <h1 className="font-bold font-main text-4xl md:text-5xl 2xl:text-7xl w-full">
           Serviços Elétricos
           <br />
           Residenciais e Comerciais
         </h1>
-        <p className="text-xl pt-5">
-          Soluções de Qualidade para Problemas Urgentes.
+        <p className="text-lg pt-3 2xl:w-[40rem] 2xl:text-2xl">
+          Soluções de Qualidade para Problemas Urgentes. Profissionais
+          competentes e capacitados para atender a sua necessidade.
         </p>
       </div>
-      <img
-        className="mt-[1%] p-10 border-2 rounded-sm backdrop-blur-lg lg:w-[50%] xl:w-[45%] 2xl:w-[30%] bg-slate-50"
-        src={bannerSvg}
-        width={470}
-      />
+
+      <div className="w-[50%] flex items-center justify-center pb-10 pt-10">
+        <img
+          src={bannerImgBg}
+          className="absolute mx-auto 2xl:w-[45rem]"
+          width={580}
+        />
+
+        <img
+          className="rounded-sm backdrop-blur-0 border-transparent
+          py-auto"
+          src={bannerImg}
+          width={250}
+        />
+      </div>
     </Section>
   );
 };
