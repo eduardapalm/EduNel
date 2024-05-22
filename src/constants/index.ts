@@ -8,13 +8,13 @@ export const navigation: INavigationItem[] = [
   },
   {
     id: "1",
-    title: "Nossos Serviços",
-    url: "#services",
+    title: "Sobre Nós",
+    url: "#about",
   },
   {
     id: "2",
-    title: "Sobre Nós",
-    url: "#about",
+    title: "Nossos Serviços",
+    url: "#services",
   },
   {
     id: "3",

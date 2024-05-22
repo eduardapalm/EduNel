@@ -38,7 +38,7 @@ const Header = () => {
       <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a href="#banner" className="xl:mr-8 flex items-center justify-center">
           <IoFlashSharp className="text-2xl pt-1" color="#EC651D" />
-          <h1 className="text-color-1 text-2xl font-extrabold">Edunel</h1>
+          <h1 className="text-color-1 text-2xl font-extrabold">EduNel</h1>
         </a>
 
         <nav
