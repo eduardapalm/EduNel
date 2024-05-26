@@ -11,13 +11,13 @@ export const navigation: INavigationItem[] = [
   },
   {
     id: "1",
-    title: "Sobre Nós",
-    url: "#about",
+    title: "Nossos Serviços",
+    url: "#services",
   },
   {
     id: "2",
-    title: "Nossos Serviços",
-    url: "#services",
+    title: "Sobre Nós",
+    url: "#about",
   },
   {
     id: "3",
@@ -30,13 +30,13 @@ export const navigation: INavigationItem[] = [
 export const aboutUs: IAboutUsCards[] = [
   {
     name: "Nelson",
-    position: "Eletricista e Co-Fundador",
+    position: "Co-Fundador",
     text: "Nelson is a seasoned entrepreneur with a passion for technology. He has over 10 years of experience in the tech industry.",
     picture: Nelson,
   },
   {
     name: "Eduardo",
-    position: "Eletricista e Co-Fundador",
+    position: "Co-Fundador",
     text: "Eduardo is a seasoned entrepreneur with a passion for technology. He has over 10 years of experience in the tech industry.",
     picture: Eduardo,
   },

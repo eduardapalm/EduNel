@@ -4,15 +4,15 @@ import { aboutUs } from "@/constants";
 
 const AboutUs = () => {
   return (
-    <div>
-      <Section className="flex items-left m-10">
+    <div id="about">
+      <Section className="mt-10">
         <h2 className="sectionTitle">Sobre Nós</h2>
         <div className="relative z-1 grid gap-10 lg:grid-cols-2">
           <div className="relative min-h-[39rem] border border-n-1/10 rounded-lg overflow-hidden">
             <div className="inset-0">
               <img
                 src={EduNel}
-                className="h-full w-full object-fill"
+                className="h-full w-full object-cover"
                 width={630}
                 alt="Robot Face Half"
               />
@@ -21,10 +21,8 @@ const AboutUs = () => {
               <div className="backdrop-blur-sm">
                 <h4 className="h4 mb-2 text-n-1">Nosso objetivo</h4>
                 <p className="p mb-[3rem] text-n-3">
-                  We are a team of passionate individuals dedicated to creating
-                  innovative solutions that empower our clients to achieve their
-                  goals. Our mission is to provide our clients with the tools
-                  and support they need to succeed in the digital landscape.
+                  Our mission is to provide our clients with the tools and
+                  support they need to succeed in the digital landscape.
                 </p>
               </div>
             </div>
