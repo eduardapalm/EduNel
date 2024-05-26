@@ -5,13 +5,14 @@ import bannerImgBg from "../assets/bannerImgBg.png";
 const Banner = () => {
   return (
     <Section id="banner" className="w-full flex-col lg:flex-row">
-      <div className="flex flex-col justify-center h-full w-full md:w-[60%] text-color-2 text-center lg:text-left">
-        <h1 className="h1 font-bold font-main text-3xl md:text-5xl 2xl:text-7xl w-full">
+      <div className="flex flex-col justify-center h-full w-full md:w-[60%] text-color-2 text-center lg:text-left font-header">
+        <h1 className="h1 font-extrabold text-color-1">EduNel</h1>
+        <h2 className="h2 font-semibold text-3xl md:text-5xl 2xl:text-7xl w-full">
           Serviços Elétricos
           <br />
           Residenciais e Comerciais
-        </h1>
-        <p className="lg:w-[23rem] pt-3 text-xs">
+        </h2>
+        <p className="lg:w-[23rem] pt-3 text-sm">
           Soluções de Qualidade para Problemas Urgentes. Profissionais
           competentes e capacitados para atender a sua necessidade.
         </p>

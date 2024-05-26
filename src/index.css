@@ -71,8 +71,6 @@
   body {
     @apply bg-background text-foreground;
     padding: 0;
-    max-width: 100dvw;
-    max-height: 100dvh;
     overflow-x: hidden;
   }
 }
