@@ -5,7 +5,7 @@ import bannerImgBg from "../assets/bannerImgBg.png";
 const Banner = () => {
   return (
     <Section id="banner" className="w-full flex-col lg:flex-row">
-      <div className="lg:px-7 flex flex-col justify-center h-full w-full md:w-[60%] text-color-2 text-center lg:text-left">
+      <div className="flex flex-col justify-center h-full w-full md:w-[60%] text-color-2 text-center lg:text-left">
         <h1 className="h1 font-bold font-main text-3xl md:text-5xl 2xl:text-7xl w-full">
           Serviços Elétricos
           <br />

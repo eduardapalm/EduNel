@@ -140,7 +140,7 @@ export default {
       addBase({});
       addComponents({
         ".sectionTitle": {
-          "@apply font-bold font-header text-[2.5rem] w-full text-center mb-10 text-color-2":
+          "@apply font-bold font-header text-2xl w-full text-center lg:text-start mb-10 text-color-2":
             {},
         },
         ".p": {
