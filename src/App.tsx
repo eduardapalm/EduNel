@@ -14,7 +14,7 @@ export default function App() {
         <body>
           <Banner />
           <main>
-            <Services />
+            {/* <Services /> */}
             <AboutUs />
           </main>
         </body>
