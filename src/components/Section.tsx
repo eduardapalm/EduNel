@@ -3,7 +3,9 @@ const Section = (props: ISectionProps) => {
   return (
     <div
       id={id}
-      className={`${className} px-10 my-20 flex flex-col items-center`}
+      className={`${className} relative container py-10
+        lg:py-16
+        xl:py-20 flex flex-col items-center`}
     >
       {children}
     </div>
