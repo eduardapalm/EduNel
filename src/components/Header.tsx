@@ -1,7 +1,7 @@
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { useLocation } from "react-router-dom";
 import { navigation } from "../constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { TextAlignJustifyIcon, Cross1Icon } from "@radix-ui/react-icons";
 
@@ -11,6 +11,10 @@ import mobileMenuBg from "../assets/svg/mobileMenuBg.svg";
 const Header = () => {
   const pathName = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
+
+  useEffect(() => {
+    enablePageScroll();
+  }, []);
 
   const toggleNavigation = () => {
     if (openNavigation) {

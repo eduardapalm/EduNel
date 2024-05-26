@@ -4,14 +4,14 @@ import bannerImgBg from "../assets/bannerImgBg.png";
 
 const Banner = () => {
   return (
-    <Section id="banner" className="w-full flex-col-reverse lg:flex-row">
+    <Section id="banner" className="w-full flex-col lg:flex-row">
       <div className="lg:px-7 flex flex-col justify-center h-full w-full md:w-[60%] text-color-2 text-center lg:text-left 2xl:pl-40">
         <h1 className="font-bold font-main text-4xl md:text-5xl 2xl:text-7xl w-full">
           Serviços Elétricos
           <br />
           Residenciais e Comerciais
         </h1>
-        <p className="text-lg pt-3 2xl:w-[40rem] 2xl:text-2xl">
+        <p className="text-2xl pt-3 2xl:w-[40rem] 2xl:text-2xl">
           Soluções de Qualidade para Problemas Urgentes. Profissionais
           competentes e capacitados para atender a sua necessidade.
         </p>
