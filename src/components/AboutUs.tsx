@@ -4,11 +4,11 @@ import { aboutUs } from "@/constants";
 
 const AboutUs = () => {
   return (
-    <div id="about">
+    <div id="about" className="bg-color-5">
       <Section>
-        <h2 className="sectionTitle">Sobre Nós</h2>
+        <h2 className="sectionTitle text-n-1">Sobre Nós</h2>
         <div className="relative z-1 grid gap-10 lg:grid-cols-2">
-          <div className="relative min-h-[39rem] border border-n-1/10 rounded-lg overflow-hidden h-[20rem]">
+          <div className="relative min-h-[39rem] border border-n-1/10 rounded-lg overflow-hidden">
             <div className="absolute inset-0">
               <img
                 src={EduNel}
@@ -30,21 +30,21 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="grid gap-10">
+          <div className="grid gap-5">
             {aboutUs.map((card) => (
-              <div className="flex items-center border rounded-lg backdrop-blur p-5">
+              <div className="flex flex-col lg:flex-row items-center border rounded-lg backdrop-blur p-5 bg-color-3 border-n-2 backdrop-">
                 <div className="">
                   <img
                     src={card.picture}
-                    className="rounded-full mx-5"
-                    width={500}
+                    className="rounded-full mx-5 md:w-[8rem] lg:w-[15rem]"
+                    width={100}
                     alt=""
                   />
                 </div>
 
-                <div className="flex flex-col ml-14">
+                <div className="flex flex-col lg:ml-10">
                   <h4 className="h4 text-color-2 font-semibold">{card.name}</h4>
-                  <p className="text-sm bg-color-1 w-fit px-2 rounded text-n-1 font-bold">
+                  <p className="text-xs bg-color-1 w-fit py-1 px-2 rounded text-n-1 font-bold">
                     {card.position}
                   </p>
                   <p className="text-sm mt-5 text-n-9">{card.text}</p>
