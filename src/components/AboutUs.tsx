@@ -31,7 +31,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-5">
             {aboutUs.map((card) => (
               <div className="flex flex-col lg:flex-row items-center border rounded-lg backdrop-blur p-5 bg-color-3 backdrop-">
                 <div className="">
