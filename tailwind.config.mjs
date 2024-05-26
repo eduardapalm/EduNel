@@ -144,7 +144,7 @@ export default {
             {},
         },
         ".p": {
-          "@apply text-[1.4rem] leading-8": {},
+          "@apply text-base leading-8": {},
         },
         ".container": {
           "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
@@ -162,7 +162,7 @@ export default {
           "@apply text-[2rem] leading-normal md:text-[2.5rem]": {},
         },
         ".h4": {
-          "@apply text-[2rem] leading-normal": {},
+          "@apply text-xl leading-normal": {},
         },
         ".h5": {
           "@apply text-2xl leading-normal": {},
