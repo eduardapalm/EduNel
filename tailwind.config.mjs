@@ -105,6 +105,33 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      letterSpacing: {
+        tagline: ".15em",
+      },
+      spacing: {
+        0.25: "0.0625rem",
+        7.5: "1.875rem",
+        15: "3.75rem",
+      },
+      opacity: {
+        15: ".15",
+      },
+      transitionDuration: {
+        DEFAULT: "200ms",
+      },
+      transitionTimingFunction: {
+        DEFAULT: "linear",
+      },
+      zIndex: {
+        1: "1",
+        2: "2",
+        3: "3",
+        4: "4",
+        5: "5",
+      },
+      borderWidth: {
+        DEFAULT: "0.0625rem",
+      },
     },
   },
   plugins: [
@@ -113,11 +140,11 @@ export default {
       addBase({});
       addComponents({
         ".sectionTitle": {
-          "@apply font-bold font-header text-[2.5rem] w-full text-center mb-10 text-color-2":
+          "@apply font-extrabold font-header text-2xl lg:text-3xl w-full text-center lg:text-start mb-10 text-color-2":
             {},
         },
         ".p": {
-          "@apply text-[1.4rem] leading-8": {},
+          "@apply text-base leading-8": {},
         },
         ".container": {
           "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
@@ -135,7 +162,7 @@ export default {
           "@apply text-[2rem] leading-normal md:text-[2.5rem]": {},
         },
         ".h4": {
-          "@apply text-[2rem] leading-normal": {},
+          "@apply text-xl leading-normal": {},
         },
         ".h5": {
           "@apply text-2xl leading-normal": {},
