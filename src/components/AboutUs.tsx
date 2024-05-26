@@ -1,6 +1,7 @@
-import Section from "./Section";
+import Section from "./ui/Section";
 import EduNel from "../assets/EduNel.jpeg";
 import { aboutUs } from "@/constants";
+import Tag from "./ui/Tag";
 
 const AboutUs = () => {
   return (
@@ -30,9 +31,9 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="grid gap-5">
+          <div className="grid md:grid-cols-2 gap-5">
             {aboutUs.map((card) => (
-              <div className="flex flex-col lg:flex-row items-center border rounded-lg backdrop-blur p-5 bg-color-3 border-n-2 backdrop-">
+              <div className="flex flex-col lg:flex-row items-center border rounded-lg backdrop-blur p-5 bg-color-3 backdrop-">
                 <div className="">
                   <img
                     src={card.picture}
@@ -44,9 +45,7 @@ const AboutUs = () => {
 
                 <div className="flex flex-col lg:ml-10">
                   <h4 className="h4 text-color-2 font-semibold">{card.name}</h4>
-                  <p className="text-xs bg-color-1 w-fit py-1 px-2 rounded text-n-1 font-bold">
-                    {card.position}
-                  </p>
+                  <Tag content={card.position} />
                   <p className="text-sm mt-5 text-n-9">{card.text}</p>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import IAboutUsCards from "@/interfaces/IAboutUsCards";
 import IServices from "../interfaces/IServices";
 import Eduardo from "../assets/Eduardo.jpeg";
 import Nelson from "../assets/Nelson.jpeg";
+import switchgear from "../assets/switchgear.jpg";
 
 export const navigation: INavigationItem[] = [
   {
@@ -40,7 +41,7 @@ export const aboutUs: IAboutUsCards[] = [
     id: 1,
     name: "Eduardo",
     position: "Co-Fundador e Eletricista",
-    text: "Eduardo is a seasoned entrepreneur with a passion for technology. He has over 10 years of experience in the tech industry.",
+    text: "Eduardo é um Profissional formado em Eletrotécnica com mais de 20 anos de experiência no mercado, registrado no CRT RJ.",
     picture: Eduardo,
   },
 ];
@@ -48,23 +49,29 @@ export const aboutUs: IAboutUsCards[] = [
 export const services: IServices[] = [
   {
     id: 0,
-    title: "Desenvolvimento Web",
-    text: "Desenvolvemos websites responsivos e otimizados para SEO, com foco na experiência do usuário.",
+
+    title: "Manutenção em Geral",
+    text: "Executamos a instalação de bombas elétricas, chuveiros, tomadas, interruptores three-way, além da instalação e troca de disjuntores.",
+    image: switchgear,
   },
   {
     id: 1,
-    title: "Desenvolvimento Mobile",
-    text: "Desenvolvemos aplicativos mobile para Android e iOS, com foco na experiência do usuário.",
+    title: "Instalação Residencial",
+    text: "Cuidamos da montagem completa da instalação elétrica, abrangendo o painel de disjuntores, cabeamento e distribuição do circuito.",
+    image: switchgear,
   },
   {
     id: 2,
-    title: "Consultoria",
-    text: "Oferecemos consultoria para empresas que desejam melhorar sua presença online.",
+
+    title: "Instalação de Medidor Padrão Light",
+    text: "Realizamos a instalação de caixas CM1 e CM3, CDJ1 e CDJ3, além das hastes de aterramento, deixando o ambiente completamente preparado para a instalação do medidor.",
+    image: switchgear,
   },
   {
     id: 3,
-    title: "Marketing Digital",
-    text: "Desenvolvemos estratégias de marketing digital para empresas que desejam aumentar sua presença online.",
+    title: "Aumento de Carga",
+    text: "Efetuamos a conversão de sistema monofásico para trifásico e aumentamos a amperagem do circuito, incluindo a troca do ramal de entrada.",
+    image: switchgear,
   },
 ];
 

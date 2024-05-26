@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "./ui/Section";
 import bannerImg from "../assets/bannerImg.png";
 import bannerImgBg from "../assets/bannerImgBg.png";
 
