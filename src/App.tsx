@@ -1,6 +1,7 @@
 // import AboutUs from "./components/AboutUs";
 import AboutUs from "./components/AboutUs";
 import Banner from "./components/Banner";
+import ContactUs from "./components/ContactUs";
 import Header from "./components/Header";
 import Services from "./components/Services";
 
@@ -16,6 +17,7 @@ export default function App() {
           <main>
             <Services />
             <AboutUs />
+            <ContactUs />
           </main>
         </body>
       </div>

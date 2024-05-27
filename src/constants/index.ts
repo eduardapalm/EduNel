@@ -4,6 +4,7 @@ import IServices from "../interfaces/IServices";
 import Eduardo from "../assets/Eduardo.jpeg";
 import Nelson from "../assets/Nelson.jpeg";
 import switchgear from "../assets/switchgear.jpg";
+import ISocials from "@/interfaces/ISocials";
 
 export const navigation: INavigationItem[] = [
   {
@@ -75,5 +76,33 @@ export const services: IServices[] = [
   },
 ];
 
-export const whatsAppMessage: string =
-  "Olá! Gostaria de saber mais sobre os serviços da empresa.";
+export const whatsAppMessage: string = encodeURIComponent(
+  "Olá! Gostaria de saber mais sobre os serviços da empresa."
+);
+
+export const phoneNumbers: string[] = ["986107215", "986107215"];
+
+export const socials: ISocials[] = [
+  {
+    id: 0,
+    title: "WhatsApp",
+    iconType: "whatsapp",
+    link: `https://wa.me/5521986107215?text=${whatsAppMessage}`,
+    text: "Envie uma mensagem!",
+  },
+  {
+    id: 1,
+    title: "Instagram",
+    iconType: "instagram",
+    link: "https://www.instagram.com/edunel.eletrica?igshid=cm9sNWRzbmZ0MG82",
+    text: "Siga nossa página ",
+    address: "@edunel.eletrica",
+  },
+  {
+    id: 2,
+    title: "Telefone",
+    iconType: "phone",
+    link: "tel:",
+    list: phoneNumbers,
+  },
+];

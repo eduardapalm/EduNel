@@ -140,7 +140,11 @@ export default {
       addBase({});
       addComponents({
         ".sectionTitle": {
-          "@apply font-extrabold font-header text-2xl lg:text-3xl w-full text-center lg:text-start mb-10 text-color-2":
+          "@apply font-extrabold font-header text-2xl lg:text-3xl w-full text-center lg:text-start mb-10 text-color-2 underline":
+            {},
+        },
+        ".sectionSubtitle": {
+          "@apply px-10 lg:pl-0 lg:pr-52 -mt-8 text-xs lg:text-xl w-full text-center lg:text-start mb-10 text-color-2":
             {},
         },
         ".p": {
@@ -149,6 +153,13 @@ export default {
         ".container": {
           "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
             {},
+        },
+        ".socialContainer": {
+          "@apply flex items-center justify-center space-x-5 backdrop-blur border drop-shadow-md w-full p-5 rounded min-h-[8rem]":
+            {},
+        },
+        ".socialIcon": {
+          "@apply text-start m-auto font-light text-[1.9rem]": {},
         },
         ".h1": {
           "@apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]":
