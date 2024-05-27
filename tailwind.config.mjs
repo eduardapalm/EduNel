@@ -144,7 +144,7 @@ export default {
             {},
         },
         ".sectionSubtitle": {
-          "@apply px-10 lg:pl-0 lg:pr-52 -mt-8 text-xs lg:text-xl w-full text-center lg:text-start mb-10 text-color-2":
+          "@apply px-10 lg:pl-0 lg:pr-52 -mt-8 w-full text-center lg:text-start mb-10 text-color-2":
             {},
         },
         ".p": {
@@ -176,7 +176,7 @@ export default {
           "@apply text-xl leading-normal": {},
         },
         ".h5": {
-          "@apply text-2xl leading-normal": {},
+          "@apply text-lg leading-normal": {},
         },
         ".h6": {
           "@apply font-semibold text-lg leading-8": {},

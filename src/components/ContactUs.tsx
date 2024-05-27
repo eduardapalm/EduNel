@@ -34,7 +34,7 @@ const ContactUs = () => {
           <div key={social.id} className="socialContainer">
             {iconSwitch(social.iconType)}
             <div className="flex flex-col w-4/5">
-              <h4>{social.title}</h4>
+              <h4 className="h5 font-semibold text-color-2">{social.title}</h4>
               {social.list ? (
                 <ul>
                   {social.list.map((phone, index) => (
@@ -50,7 +50,7 @@ const ContactUs = () => {
                 </ul>
               ) : (
                 <a
-                  className={`${!social.address && "underline text-color-1 cursor-pointer"}`}
+                  className={`${!social.address ? "underline text-color-1 cursor-pointer" : "text-n-7 text-sm font-extralight"}`}
                   href={social.link}
                   target="_blank"
                 >
