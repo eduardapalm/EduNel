@@ -12,7 +12,7 @@ const Banner = () => {
           <br />
           Residenciais e Comerciais
         </h2>
-        <p className="lg:w-[23rem] pt-3 text-sm">
+        <p className="p px-10 lg:pl-0 lg:w-[23rem] pt-3">
           Soluções de Qualidade para Problemas Urgentes. Profissionais
           competentes e capacitados para atender a sua necessidade.
         </p>
