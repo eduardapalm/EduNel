@@ -56,8 +56,8 @@ const Header = () => {
           className={`${
             openNavigation
               ? "flex flex-col text-center h-full lg:flex-row lg:pt-0 top-[4.29rem] pt-[3rem]"
-              : "hidden"
-          } fixed top-[5rem] left-0 right-0 bottom-0  lg:static lg:flex lg:ml-auto lg:mr-4 lg:bg-transparent text-neutral-700 overflow-hidden bg-white`}
+              : "hidden top-[5rem]"
+          } fixed left-0 right-0 bottom-0 lg:static lg:flex lg:ml-auto lg:mr-4 lg:bg-transparent text-neutral-700 overflow-hidden bg-white`}
         >
           {openNavigation && (
             <img
