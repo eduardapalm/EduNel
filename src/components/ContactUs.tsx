@@ -21,52 +21,56 @@ const ContactUs = () => {
   };
 
   return (
-    <Section className="xl:items-start">
-      <h2 className="sectionTitle text-color-2">Entre em Contato</h2>
+    <div id="contact">
+      <Section className="xl:items-start">
+        <h2 className="sectionTitle text-color-2">Entre em Contato</h2>
 
-      <p className="sectionSubtitle text-n-4">
-        Entre em contato conosco para obter mais informações sobre nossos
-        serviços.
-      </p>
+        <p className="sectionSubtitle text-n-4">
+          Entre em contato conosco para obter mais informações sobre nossos
+          serviços.
+        </p>
 
-      <div className="grid md:grid-cols-3 gap-5 m-auto lg:m-0 lg:w-full">
-        {socials.map((social) => (
-          <div key={social.id} className="socialContainer">
-            {iconSwitch(social.iconType)}
-            <div className="flex flex-col w-4/5">
-              <h4 className="h5 font-semibold text-color-2">{social.title}</h4>
-              {social.list ? (
-                <ul>
-                  {social.list.map((phone, index) => (
-                    <li key={index}>
-                      <a
-                        className="underline text-color-1 cursor-pointer"
-                        href={`${social.link}+5521${phone}`}
-                      >
-                        (21) {phoneFormatted(phone)}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <a
-                  className={`${!social.address ? "underline text-color-1 cursor-pointer" : "text-n-7 text-sm font-extralight"}`}
-                  href={social.link}
-                  target="_blank"
-                >
-                  {social.text}
-                  {social.address && (
-                    <span className="underline text-color-1 cursor-pointer">
-                      {social.address}
-                    </span>
-                  )}
-                </a>
-              )}
+        <div className="grid md:grid-cols-3 gap-5 m-auto lg:m-0 lg:w-full">
+          {socials.map((social) => (
+            <div key={social.id} className="socialContainer">
+              {iconSwitch(social.iconType)}
+              <div className="flex flex-col w-4/5">
+                <h4 className="h5 font-semibold text-color-2">
+                  {social.title}
+                </h4>
+                {social.list ? (
+                  <ul>
+                    {social.list.map((phone, index) => (
+                      <li key={index}>
+                        <a
+                          className="underline text-color-1 cursor-pointer"
+                          href={`${social.link}+5521${phone}`}
+                        >
+                          (21) {phoneFormatted(phone)}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <a
+                    className={`${!social.address ? "underline text-color-1 cursor-pointer" : "text-n-7 text-sm font-extralight"}`}
+                    href={social.link}
+                    target="_blank"
+                  >
+                    {social.text}
+                    {social.address && (
+                      <span className="underline text-color-1 cursor-pointer">
+                        {social.address}
+                      </span>
+                    )}
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </Section>
+          ))}
+        </div>
+      </Section>
+    </div>
   );
 };
 

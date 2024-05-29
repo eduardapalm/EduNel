@@ -33,6 +33,13 @@ const Header = () => {
     setOpenNavigation(false);
   };
 
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 border-b lg:backdrop-blur-lg font-header text-color-2 ${
@@ -76,7 +83,12 @@ const Header = () => {
           ))}
         </nav>
 
-        <Button className="hidden lg:flex">Entre em Contato</Button>
+        <a
+          href="#contact"
+          className="py-2 px-3 rounded-md text-n-1 font-bold bg-color-1 hidden lg:flex"
+        >
+          Entre em Contato
+        </a>
         <Button onClick={toggleNavigation} className="lg:hidden" size="icon">
           {openNavigation ? <Cross1Icon /> : <TextAlignJustifyIcon />}
         </Button>
