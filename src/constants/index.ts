@@ -35,7 +35,7 @@ export const aboutUs: IAboutUsCards[] = [
     id: 0,
     name: "Nelson",
     position: "Co-Fundador e Eletricista",
-    text: "Nelson is a seasoned entrepreneur with a passion for technology. He has over 10 years of experience in the tech industry.",
+    text: "Nelson é um Profissional formado em Eletrotécnica, com mais de 10 anos de experiência no mercado e registro no CRT-RJ.",
     picture: Nelson,
   },
   {
@@ -80,7 +80,7 @@ export const whatsAppMessage: string = encodeURIComponent(
   "Olá! Gostaria de saber mais sobre os serviços da empresa."
 );
 
-export const phoneNumbers: string[] = ["986107215", "986107215"];
+export const phoneNumbers: string[] = ["986107215", "979659680"];
 
 export const socials: ISocials[] = [
   {

@@ -21,11 +21,15 @@ const AboutUs = () => {
             <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15 font-header">
               <div className="backdrop-blur-sm">
                 <h4 className="text-xl font-semibold mb-2 text-n-1">
-                  Nosso objetivo
+                  Nossa empresa
                 </h4>
                 <p className="p mb-[3rem] text-n-2">
-                  Our mission is to provide our clients with the tools and
-                  support they need to succeed in the digital landscape.
+                  EduNel é uma empresa especializada na área de eletricidade,
+                  com foco em instalação e manutenção. Nosso objetivo é oferecer
+                  soluções flexíveis para a montagem e instalação de
+                  equipamentos elétricos e eletrônicos, sempre com muita clareza
+                  e profissionalismo, garantindo a satisfação dos nosssos
+                  clientes.
                 </p>
               </div>
             </div>
