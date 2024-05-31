@@ -33,13 +33,6 @@ const Header = () => {
     setOpenNavigation(false);
   };
 
-  const handleScrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 border-b lg:backdrop-blur-lg font-header text-color-2 ${
