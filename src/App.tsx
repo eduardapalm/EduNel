@@ -9,7 +9,7 @@ import Services from "./components/Services";
 export default function App() {
   return (
     <>
-      <div className="bg-gradient-to-b from-slate-50 via-color-3 via-85% to-slate-100 pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden w-full h-full">
+      <div className="bg-gradient-to-b from-slate-50 via-color-3 via-85% to-slate-50 pt-[4.35rem] lg:pt-[5.25rem] overflow-hidden w-full h-full">
         <header>
           <Header />
         </header>
@@ -21,7 +21,7 @@ export default function App() {
             <ContactUs />
           </main>
         </body>
-        <footer>
+        <footer className="border border-t">
           <Footer />
         </footer>
       </div>
